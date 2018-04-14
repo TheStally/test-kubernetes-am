@@ -12,7 +12,6 @@ RUN unzip -q /tmp/DS-5.5.0.zip -d /opt \
 		--adminConnectorPort 4444 \
 		--baseDN dc=example,dc=com \
 		--addBaseEntry \
-		--productionMode \
 		--acceptLicense \
 		--doNotStart
 
