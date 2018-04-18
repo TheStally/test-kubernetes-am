@@ -1,0 +1,17 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: am-deploy
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: am
+    spec:
+      containers:
+      - name: am-pod
+        image: areynolds762/test-forgerock-am
+        ports:
+        - containerPort: 8080
+          name: http
