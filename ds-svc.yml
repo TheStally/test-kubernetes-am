@@ -3,6 +3,7 @@ apiVersion: v1
 metadata:
   name: ds-svc
 spec:
+  type: ClusterIP
   selector:
     app: ds
   ports:
