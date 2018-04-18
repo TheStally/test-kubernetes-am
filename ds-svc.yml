@@ -1,0 +1,14 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: ds-svc
+spec:
+  selector:
+    app: ds
+  ports:
+  - name: ldap
+    protocol: TCP
+    port: 389
+  - name: admin
+    protocol: TCP
+    port: 4444
