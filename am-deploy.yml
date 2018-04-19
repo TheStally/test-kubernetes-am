@@ -12,6 +12,7 @@ spec:
       containers:
       - name: am-pod
         image: areynolds762/test-forgerock-am
+        imagePullPolicy: Always
         ports:
         - containerPort: 8080
           name: http

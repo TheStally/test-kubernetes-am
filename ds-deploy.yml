@@ -12,6 +12,7 @@ spec:
       containers:
       - name: ds-pod
         image: areynolds762/test-forgerock-ds
+        imagePullPolicy: Always
         ports:
         - containerPort: 389
           name: ldap
